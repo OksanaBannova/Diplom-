@@ -15,7 +15,7 @@ const TrailDetails = ({ className, data }) => {
   /**инфо о поезде на странице выбора вагона,  "выбрать другой поезд" */
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_details"}>
         <GoBackBlock className={className} type={" come-back"} />
         <Card data={data} className={"trains-block"}>
@@ -24,7 +24,7 @@ const TrailDetails = ({ className, data }) => {
           <CardBottom className={"trains-block"} data={data.duration} />
         </Card>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

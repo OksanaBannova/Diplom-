@@ -16,11 +16,11 @@ const TimingBlock = ({ className, duration }) => {
 
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "-timing"}>
         <span>{timeText}</span>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

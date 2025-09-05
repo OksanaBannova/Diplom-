@@ -20,7 +20,7 @@ const WagonDetailsTable = ({ data, classType }) => {
     </svg>
   );
   return (
-    <React.Fragment>
+    <>
       <table className="amount-seats_table">
         <colgroup>
           <col />
@@ -87,7 +87,7 @@ const WagonDetailsTable = ({ data, classType }) => {
           </tbody>
         )}
       </table>
-    </React.Fragment>
+    </>
   );
 };
 

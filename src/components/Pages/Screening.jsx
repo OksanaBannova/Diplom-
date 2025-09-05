@@ -89,7 +89,7 @@ const Screening = () => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-tickets" banner={banner3} />
       <div className="screening_wrapper">
         <MainForm className="search-tickets_form" />
@@ -110,7 +110,7 @@ const Screening = () => {
           </section>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

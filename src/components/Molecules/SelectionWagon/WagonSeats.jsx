@@ -20,7 +20,7 @@ const WagonSeats = ({ className, data }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_wrap"}>
         <WagonDetailsTable
           data={dataWagons}
@@ -28,7 +28,7 @@ const WagonSeats = ({ className, data }) => {
         />
         <WagonServices className={className} data={data.coach} />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

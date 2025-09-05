@@ -25,7 +25,7 @@ console.log(  data.seats,
     console.log(  
       selectedTypeTicket,' selectedTypeTicket');
   return (
-    <React.Fragment>
+    <>
       <div className="wagon_item wagon-third_class">
         <div className="wagon_template-block">
           <span className="template-text">
@@ -126,7 +126,7 @@ console.log(  data.seats,
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default WagonThirdClass;

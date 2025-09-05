@@ -117,7 +117,7 @@ const SelectionTrain = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-tickets" banner={banner3} />
       <div className="selection-train_wrapper">
         <MainForm className="search-tickets_form" />
@@ -169,7 +169,7 @@ const SelectionTrain = () => {
           )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

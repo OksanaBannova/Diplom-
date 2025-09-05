@@ -6,7 +6,7 @@ import Footer from "./Footer/Footer";
 
 const Layout = () => {
   return (
-    <React.Fragment>
+    <>
       <Header />
 
       <Main>
@@ -14,7 +14,7 @@ const Layout = () => {
       </Main>
 
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
 export default Layout;

@@ -8,7 +8,7 @@ const ContentBlock = ({ className,template }) => {
 
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_block"}>
         {template.seats.length > 0 &&
           template.seats.map((item) => {
@@ -29,7 +29,7 @@ const ContentBlock = ({ className,template }) => {
             );
           })}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default ContentBlock;

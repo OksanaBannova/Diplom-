@@ -1,7 +1,7 @@
 import React from "react";
 
 const Appeal = ({data}) => {
-    return (<React.Fragment>
+    return (<>
         <div className="appeal_wrap">
                 <p className="appeal-text">
                   <strong className="strong-text">{data+"!"}</strong>
@@ -22,7 +22,7 @@ const Appeal = ({data}) => {
                   </strong>
                 </p>
               </div>
-    </React.Fragment>)
+    </>)
 }
 
 export default Appeal;

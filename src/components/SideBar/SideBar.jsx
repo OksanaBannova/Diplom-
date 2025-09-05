@@ -34,7 +34,7 @@ const SideBar = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <aside className="sidebar-wrap container p-0">
         <div className="sidebar" id="sidebar">
           {getLocation() ? <AssistantBlock /> : <OrderDetails />}
@@ -43,7 +43,7 @@ const SideBar = () => {
           ) : null}
         </div>
       </aside>
-    </React.Fragment>
+    </>
   );
 };
 

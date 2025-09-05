@@ -7,7 +7,7 @@ const AddPassenger = ({ state, setState }) => {
     setState((prev) => [...prev, state.length + 1]);
   };
   return (
-    <React.Fragment>
+    <>
       <div className="passengers-info_block-item">
         <div className="passengers-info_block-item_top add-passenger">
           <Title
@@ -20,7 +20,7 @@ const AddPassenger = ({ state, setState }) => {
           ></Button>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

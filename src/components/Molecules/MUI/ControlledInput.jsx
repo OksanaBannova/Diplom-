@@ -13,7 +13,7 @@ const ControlledInput = ({ id, type, state, onChangeInput, errorDocs }) => {
   else placeholder = "";
 //console.log(state, 'input')
   return (
-    <React.Fragment>
+    <>
       <TextField
         id={id}
         type={type}
@@ -24,7 +24,7 @@ const ControlledInput = ({ id, type, state, onChangeInput, errorDocs }) => {
           onChangeInput(event.target.value, id, type);
         }}
       />
-    </React.Fragment>
+    </>
   );
 };
 

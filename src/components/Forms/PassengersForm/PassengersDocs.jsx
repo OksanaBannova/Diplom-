@@ -34,7 +34,7 @@ const PassengersDocs = ({ state, setState, errorDocs }) => {
     }
   };
   return (
-    <React.Fragment>
+    <>
       <div className="form passengers-docs_form">
         <div className="passengers-data_docs">
           <div className="passengers-data_type">
@@ -73,7 +73,7 @@ const PassengersDocs = ({ state, setState, errorDocs }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

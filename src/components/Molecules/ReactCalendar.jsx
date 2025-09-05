@@ -26,7 +26,7 @@ const FormCalendar = ({ value, type, className }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <DatePicker
         showIcon
         selected={date}
@@ -45,7 +45,7 @@ const FormCalendar = ({ value, type, className }) => {
         minDate={new Date()}
         showDisabledMonthNavigation
       />
-    </React.Fragment>
+    </>
   );
 };
 export default FormCalendar;

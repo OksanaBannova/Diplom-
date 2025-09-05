@@ -89,7 +89,7 @@ const MainForm = ({ className }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className={className}>
         <div className={className + "_destination"}>
           {" "}
@@ -162,7 +162,7 @@ const MainForm = ({ className }) => {
           )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

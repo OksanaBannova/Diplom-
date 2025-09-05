@@ -52,7 +52,7 @@ const QuantityTickets = ({ className, data, selected, setSelected }) => {
     dispatch(setTicketNoSeats({ count: Number(event.target.value) }));
   };
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_block"}>
         <CardTitle className={className + "_block"} text="Количество билетов" />
 
@@ -130,7 +130,7 @@ const QuantityTickets = ({ className, data, selected, setSelected }) => {
           })}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -11,7 +11,7 @@ const GoBackBlock = ({ className, type }) => {
     navigate({ pathname: "/fe-dev-diploma/trains", search: location.search });
   };
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_buttons-group"}>
         <Button type={className + type}>
           <i
@@ -24,7 +24,7 @@ const GoBackBlock = ({ className, type }) => {
           Выбрать другой поезд
         </Button>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

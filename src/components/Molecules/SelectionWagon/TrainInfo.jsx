@@ -7,7 +7,7 @@ const TrainInfo = ({ className, data }) => {
     return;
   }
   return (
-    <React.Fragment>
+    <>
       <div className={className + " trail"}>
         <span className={className + " trains-number"}>106C</span>
         <div className="wrap">
@@ -23,7 +23,7 @@ const TrainInfo = ({ className, data }) => {
           <span className="train-name">{data.from.trainName}</span>
         ) : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

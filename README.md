@@ -1,4 +1,5 @@
 [GH-Pages]()
+[CI]
 [![Build status](https://ci.appveyor.com/api/projects/status/kgr54xb9316xwp5d?svg=true)](https://ci.appveyor.com/project/OksanaBannova/diplom)
 # Дипломная работа к профессии Frontend-разработчик «Система бронирования ж/д билетов»
 

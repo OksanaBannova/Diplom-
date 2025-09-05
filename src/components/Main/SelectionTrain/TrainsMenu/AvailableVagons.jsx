@@ -36,7 +36,7 @@ const AvailableWagons = ({ amount, type, className, min_price, item }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div
         className={
           "available-wagons_block-item d-flex wagons-" + className + "-class"
@@ -69,7 +69,7 @@ const AvailableWagons = ({ amount, type, className, min_price, item }) => {
           <ContentBlock className="available-seats" template={template} />
         ) : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

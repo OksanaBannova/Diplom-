@@ -12,7 +12,7 @@ const TrailsData = ({ className, data, icon, reverse = false }) => {
   const duration = getDuration(data.to.datetime, data.from.datetime);
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "-group d-flex flex-row"}>
         <div className={className + " train-departure-from d-flex flex-column"}>
           <span key={nanoid()} className="train-departure data-trains-datetime">
@@ -117,7 +117,7 @@ const TrailsData = ({ className, data, icon, reverse = false }) => {
           </div>
         </div>
       ) : null}
-    </React.Fragment>
+    </>
   );
 };
 

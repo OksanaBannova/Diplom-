@@ -73,7 +73,7 @@ const PassengersInfo = () => {
   };
   console.log(count, "count");
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-tickets" banner={banner3} />
       <div className="passengers-info_wrapper">
         <MainForm className="search-tickets_form" />
@@ -124,7 +124,7 @@ const PassengersInfo = () => {
           </section>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

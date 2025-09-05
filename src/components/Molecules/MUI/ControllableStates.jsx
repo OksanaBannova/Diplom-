@@ -32,7 +32,7 @@ const ControllableStates = ({
   }
 
   return (
-    <React.Fragment>
+    <>
       <Autocomplete
         className={
           type === "startCity" || type === "finishCity"
@@ -69,7 +69,7 @@ const ControllableStates = ({
           />
         )}
       />{" "}
-    </React.Fragment>
+    </>
   );
 };
 

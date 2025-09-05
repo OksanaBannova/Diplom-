@@ -5,7 +5,7 @@ const WagonsTypesBlock = ({ className, selectedType, setSelectedType }) => {
 
 
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_block"}>
         <CardTitle className={className} text="Тип вагона" />
         <div className={className + "_buttons-group"}>
@@ -120,7 +120,7 @@ const WagonsTypesBlock = ({ className, selectedType, setSelectedType }) => {
           </Button>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ const PersonalDataForm = ({ data, onChange }) => {
   
 
   return (
-    <React.Fragment>
+    <>
       <div className="form personal-data_form">
         <div className="passengers-data_fullname" style={{ margin: 0 }}>
           <div className="form-group group-fullname">
@@ -89,7 +89,7 @@ const PersonalDataForm = ({ data, onChange }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

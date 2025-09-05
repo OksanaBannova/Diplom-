@@ -3,7 +3,7 @@ import {dataReview} from  "../../utils/dataText";
 
 const Review = () => {
     return (
-      <React.Fragment>
+      <>
         <div className="card-deck feedback-group">
           <div className="card card-feedback-item" id="feedback1">
             <div className="card-top ifeedback-item__img-wrap">
@@ -94,7 +94,7 @@ const Review = () => {
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </>
     );
   };
   

@@ -28,7 +28,7 @@ const OrderResult = () => {
 
   const amount = Array(5).fill().map((e, i) => i + 1);
   return (
-    <React.Fragment>
+    <>
       <Banner
         className=" banner banner-order-result_page"
         banner={banner_order_page}
@@ -72,7 +72,7 @@ const OrderResult = () => {
           </Card>
         </div>
       </section>}
-    </React.Fragment>
+    </>
   );
 };
 

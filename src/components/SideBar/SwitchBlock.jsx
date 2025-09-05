@@ -18,7 +18,7 @@ const SwitchBlock = ({ handleChange }) => {
     (state) => state.catalogTrains.searchData
   );
   return (
-    <React.Fragment>
+    <>
       <div className="sidebar-switch-block">
         <FormGroup>
           <div className="sidebar-switch-block-form-item">
@@ -115,7 +115,7 @@ const SwitchBlock = ({ handleChange }) => {
           </div>
         </FormGroup>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -46,7 +46,7 @@ const PassengersInfo = ({ state, setState }) => {
       }));
   };
   return (
-    <React.Fragment>
+    <>
       <div className="passengers-data_form">
         <div className="passengers-data_type">
           <PassengersSelect
@@ -164,7 +164,7 @@ const PassengersInfo = ({ state, setState }) => {
           </span>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

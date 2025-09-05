@@ -7,7 +7,7 @@ const Banner = ({ banner, className, children }) => {
   const location = useLocation();
   
   return (
-    <React.Fragment>
+    <>
       <div className={className}>
         {location.pathname === "/Diplom-" ? (
           <Title
@@ -18,7 +18,7 @@ const Banner = ({ banner, className, children }) => {
         ) : null}
         <img src={banner} className="img-banner" alt="train-banner" />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

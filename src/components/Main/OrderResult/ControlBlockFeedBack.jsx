@@ -11,7 +11,7 @@ const ControlBlockFeedBack = ({ amount }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className="control_block">
         <div className="licker_wrap">
           <Title className="licker-block_title" text={"Оценить сервис"} />
@@ -51,7 +51,7 @@ const ControlBlockFeedBack = ({ amount }) => {
           ></Button>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default ControlBlockFeedBack;

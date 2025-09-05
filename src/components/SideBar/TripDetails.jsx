@@ -24,7 +24,7 @@ const TripDetails = () => {
     },
   };
   return (
-    <React.Fragment>
+    <>
       <div className="order-details">
         <div className="order-details_side-block_top">
           <div className="side-block_train-number">
@@ -52,7 +52,7 @@ const TripDetails = () => {
           />
         </CardBody>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

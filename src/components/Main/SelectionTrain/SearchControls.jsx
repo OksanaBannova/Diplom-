@@ -10,7 +10,7 @@ const SearchControls = ({
 
 
   return (
-    <React.Fragment>
+    <>
       <div className="search-controls__wrap d-flex">
         <div className="amount_block">
           <span className="amount-text">{"Найдено "} </span>
@@ -104,7 +104,7 @@ const SearchControls = ({
           </div>
         </div>:null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

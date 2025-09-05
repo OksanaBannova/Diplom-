@@ -30,7 +30,7 @@ const TrainsMenu = ({ currentItems }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className="card-deck trains-menu-group m-0">
         {currentItems && currentItems.length > 0
           ? currentItems.map((item) => (
@@ -38,7 +38,7 @@ const TrainsMenu = ({ currentItems }) => {
             ))
           : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default TrainsMenu;

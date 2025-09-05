@@ -72,7 +72,7 @@ const PassengersForm = ({ id }) => {
     dispatch(setDataPassengers({ data: { info: dataInfo, docs } }));
   };
   return (
-    <React.Fragment>
+    <>
       <PassengersInfo state={info} setState={setInfo} />
       <div className="passengers-info_block-item_body_divider"></div>
       <PassengersDocs state={docs} setState={setDocs} errorDocs={errorDocs} />
@@ -116,7 +116,7 @@ const PassengersForm = ({ id }) => {
           ></Button>
         ) : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default PassengersForm;

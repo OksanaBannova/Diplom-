@@ -9,7 +9,7 @@ const WagonSecondClass = ({ data, selectedTypeTicket, onClick }) => {
   const seatsBtnsArr = getSeatsArr(data.coach.class_type)
  
   return (
-    <React.Fragment>
+    <>
       <div className="wagon_item wagon-second_class">
         <div className="wagon_template-block">
           <span className="template-text">
@@ -66,7 +66,7 @@ const WagonSecondClass = ({ data, selectedTypeTicket, onClick }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default WagonSecondClass;

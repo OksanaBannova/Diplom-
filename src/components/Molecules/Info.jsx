@@ -11,7 +11,7 @@ import icon_error from "../../img/loading/icon_error.svg";
 import { nanoid } from "nanoid";
 const Info = ({ type, text, onClick }) => {
   return (
-    <React.Fragment>
+    <>
       <Card id={nanoid()} className={" active " + type}>
         <CardTop
           className={type + "_card-top"}
@@ -31,7 +31,7 @@ const Info = ({ type, text, onClick }) => {
           />
         </CardBottom>
       </Card>
-    </React.Fragment>
+    </>
   );
 };
 export default Info;

@@ -140,7 +140,7 @@ console.log(upData,'upData')
     console.log(event, 11);
   };
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-tickets" banner={banner3} />
 
       <div className="selection-wagons_wrapper">
@@ -198,7 +198,7 @@ console.log(upData,'upData')
           )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -16,7 +16,7 @@ const Timing = ({ type }) => {
   } = useSelector((state) => state.catalogTrains.searchData.trainsParameters);
 
   return (
-    <React.Fragment>
+    <>
       <div className={type + "_timing-block"}>
         <div className="time-start__wrap">
           <CardTitle text="Время отбытия" className={type + "_time-start"} />
@@ -57,7 +57,7 @@ const Timing = ({ type }) => {
           />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

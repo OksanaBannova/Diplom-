@@ -8,7 +8,7 @@ const BlockItem = React.forwardRef(
    
 
     return (
-      <React.Fragment>
+      <>
         <div
           ref={ref}
           id={id}
@@ -49,7 +49,7 @@ const BlockItem = React.forwardRef(
             </div>
           ) : null}
         </div>
-      </React.Fragment>
+      </>
     );
   }
 );

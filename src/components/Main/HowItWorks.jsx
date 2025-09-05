@@ -13,7 +13,7 @@ const HowItWorks = () => {
     document.querySelector(".modal").classList.toggle("modal-active");
   };
   return (
-    <React.Fragment>
+    <>
       <section className="how-it-works m-0" id="howItWorks">
         <Modal type="info" onClick={clickHandler} />
         <div className="row no-gutters">
@@ -76,7 +76,7 @@ const HowItWorks = () => {
           </div>
         </div>
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

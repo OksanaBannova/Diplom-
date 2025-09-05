@@ -3,7 +3,7 @@ import React from "react";
 const CardIconsBlock = ({ wifi, express, className }) => {
 
   return (
-    <React.Fragment>
+    <>
       <div
         className={
           className
@@ -28,7 +28,7 @@ const CardIconsBlock = ({ wifi, express, className }) => {
           aria-hidden="true"
         ></i>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

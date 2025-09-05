@@ -7,13 +7,13 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 const FeedBack = () => {
   return (
-    <React.Fragment>
+    <>
       <section className="feedback" id="feedback">
         <h2 className="feedback__title">Отзывы</h2>
 
         <Carousel />
       </section>
-    </React.Fragment>
+    </>
   );
 };
 

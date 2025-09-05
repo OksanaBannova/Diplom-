@@ -15,7 +15,7 @@ const QuantityPassBlock = ({ data }) => {
     //console.log(data, 'data', resultTemplate,'resultTemplate')
 
   return (
-    <React.Fragment>
+    <>
       <div className="order-details_passengers">
         <div className="order-details_passengers_header">
           <MySvgIcon
@@ -67,7 +67,7 @@ const QuantityPassBlock = ({ data }) => {
           </div>
         ) : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

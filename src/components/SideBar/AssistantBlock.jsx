@@ -49,7 +49,7 @@ const AssistantBlock = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className="assistant-block_wrap">
         <FormSideBar from={from.date} to={to.date} />
         <SwitchBlock handleChange={handleChangeSwitch} />
@@ -57,7 +57,7 @@ const AssistantBlock = () => {
         <SideBlock type="departure" date={from.date} side="start" />
         <SideBlock type="arrival" date={to.date} side="end" />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

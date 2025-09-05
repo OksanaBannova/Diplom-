@@ -32,7 +32,7 @@ const ProgressBar = () => {
   }
 
   return (
-    <React.Fragment>
+    <>
       <div className="progress">
         <div className=" progress-bar step-tickets p-0">
           <span className="border-top-step"></span>
@@ -77,7 +77,7 @@ const ProgressBar = () => {
           <span className="progress-bar-name">Проверка</span>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

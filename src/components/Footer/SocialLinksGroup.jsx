@@ -3,7 +3,7 @@ import React from "react";
 
 
 const SocialLinksGroup = () => {
-    return (<React.Fragment>
+    return (<>
                     <div className="social  text-light">
               <h5 className="footer-social__title text-left">
                 Подписывайтесь на нас
@@ -27,7 +27,7 @@ const SocialLinksGroup = () => {
 
               </div>
             </div>
-    </React.Fragment>)
+    </>)
 }
 
 export default SocialLinksGroup;

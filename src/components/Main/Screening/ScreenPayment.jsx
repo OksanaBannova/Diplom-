@@ -7,7 +7,7 @@ const ScreenPayment = ({ data }) => {
   const location = useLocation();
   const params = useParams();
   return (
-    <React.Fragment>
+    <>
       <div className="screening-block screening-block_payment">
         <div className=" card screening-block_card">
           <div className="screening-block_card-top">
@@ -33,7 +33,7 @@ const ScreenPayment = ({ data }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

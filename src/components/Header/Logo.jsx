@@ -4,11 +4,11 @@ import "./header.css";
 
 const Logo = () => {
   return (
-    <React.Fragment>
+    <>
       <Link to="/Diplom-" className="logo-container" id="startLogo">
         Лого
       </Link>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import ic_loading_train from "../../img/loading/ic_loading_train.svg";
 import ic_loading_line from "../../img/loading/ic_loading_line.svg";
 const Loader = () => {
   return (
-    <React.Fragment>
+    <>
       <div className="loader_block">
         <span className="loader-text text-center">Идет поиск</span>
         <div className="icons_block">
@@ -21,7 +21,7 @@ const Loader = () => {
           />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default Loader;

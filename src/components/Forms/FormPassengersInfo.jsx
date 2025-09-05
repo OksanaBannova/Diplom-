@@ -21,7 +21,7 @@ const PassengersInfo = () => {
     );
   };
   return (
-    <React.Fragment>
+    <>
       <div className="form passengers-data_form">
         <div className="passengers-data_type">
           <PassengersLableState
@@ -130,7 +130,7 @@ const PassengersInfo = () => {
           </span>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

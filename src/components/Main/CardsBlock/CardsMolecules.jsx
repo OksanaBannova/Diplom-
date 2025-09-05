@@ -13,7 +13,7 @@ import icon_yellow_arrow_right from "../../../img/selectionTrain/icon_yellow-arr
 export const CardTop = ({ className, data, icon, children }) => {
 
     return (
-      <React.Fragment>
+      <>
         <div key={nanoid()} className={"card-top "+ className}>
         {children?null: <MySvgIcon
             type={className}
@@ -22,14 +22,14 @@ export const CardTop = ({ className, data, icon, children }) => {
           />}
           {children? children:<TrainInfo data={data} className={className}/>}
         </div>
-      </React.Fragment>
+      </>
     );
   };
 
   export const CardBody = ({ className, data, children }) => {
 
     return (
-      <React.Fragment>
+      <>
         <div key={nanoid()} className={"card-body " + className}>
           {children? children:
           <div className={className + "-group d-flex flex-row"}>
@@ -72,18 +72,18 @@ export const CardTop = ({ className, data, icon, children }) => {
             </div>
           </div>}
         </div>
-      </React.Fragment>
+      </>
     );
   };
   
   export const CardBottom = ({ className, data, children }) => {
     return (
-      <React.Fragment>
+      <>
         <div className={"card-bottom " + className + "_bottom"}>
           {children? null:<MySvgIcon  type={className} className={className} icon={icon_clock} />}
            {children? null:<TimingBlock className={className} duration={data} />}
            {children? children:null}
         </div>
-      </React.Fragment>
+      </>
     );
   };

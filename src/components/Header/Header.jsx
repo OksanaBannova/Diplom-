@@ -12,7 +12,7 @@ import { nanoid } from "nanoid";
 const Header = () => {
 
   return (
-    <React.Fragment>
+    <>
       <header className="container-fluid header">
         <div className="row">
           <div className="col col-md">
@@ -23,7 +23,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </React.Fragment>
+    </>
   );
 };
 

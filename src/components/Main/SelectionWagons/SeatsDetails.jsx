@@ -18,7 +18,7 @@ const SeatsDetails = ({ className, data, selectedTypeTicket, onClick }) => {
   const result = getArrWagons(data);
 //console.log( result, "result");
   return (
-    <React.Fragment>
+    <>
       <div key={nanoid()} className={className + "_block"}>
         <div className={className + "_block-header"}>
           <div className={className + "_buttons-block"}>
@@ -102,7 +102,7 @@ const SeatsDetails = ({ className, data, selectedTypeTicket, onClick }) => {
           )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

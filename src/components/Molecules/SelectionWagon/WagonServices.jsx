@@ -66,7 +66,7 @@ const WagonServices = ({ className, data }) => {
   };
  
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_services-block"}>
         <div className={className + "_services-block_title"}>
           <span className={"services-block_title_normal"}>Обслуживание</span>
@@ -247,9 +247,8 @@ const WagonServices = ({ className, data }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default WagonServices;
 
-/**  */

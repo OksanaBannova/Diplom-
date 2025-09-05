@@ -21,7 +21,7 @@ const PassengersLableState = ({
   id === "certificate" ? (width = 444) : (width = 280);
 
   return (
-    <React.Fragment>
+    <>
       <Autocomplete
         className={classes.customStyle}
         id={id}
@@ -47,7 +47,7 @@ const PassengersLableState = ({
           />
         )}
       />{" "}
-    </React.Fragment>
+    </>
   );
 };
 

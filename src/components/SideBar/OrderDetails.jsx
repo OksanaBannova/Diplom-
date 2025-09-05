@@ -11,7 +11,7 @@ const OrderDetails = () => {
   );
   
   return (
-    <React.Fragment>
+    <>
       <div className="order-details-block_wrap">
         <div className="order-details-block_header">
           <Title className="order-details-block_title" text="Детали поездки" />
@@ -39,7 +39,7 @@ const OrderDetails = () => {
           </svg>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default OrderDetails;

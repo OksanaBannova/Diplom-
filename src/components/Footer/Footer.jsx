@@ -16,7 +16,7 @@ const Footer = () => {
   //const { data = [], isLoading } = useGetSubscribeQuery(subscriber);
   //console.log(subscriber, 'subscriber')
   return (
-    <React.Fragment>
+    <>
       <footer className="container-fluid footer" id="footer">
         <div className="row height-351">
           <div className="col-6 text-center p-0">
@@ -114,7 +114,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </React.Fragment>
+    </>
   );
 };
 

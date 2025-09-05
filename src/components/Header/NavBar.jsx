@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   return (
-    <React.Fragment>
+    <>
       <nav
         className="navbar navbar-expand-sm pl-0 navbar-dark bg-dark"
         id="navBar"
@@ -41,7 +41,7 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-    </React.Fragment>
+    </>
   );
 };
 

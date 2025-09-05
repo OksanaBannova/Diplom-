@@ -26,7 +26,7 @@ const FormSubscribe = () => {
       : null;
   };
   return (
-    <React.Fragment>
+    <>
       <div className="form-row form-subscribe">
         <input
           ref={inputRef}
@@ -44,7 +44,7 @@ const FormSubscribe = () => {
           Отправить
         </button>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

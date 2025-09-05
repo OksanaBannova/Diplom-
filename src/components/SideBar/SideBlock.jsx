@@ -19,7 +19,7 @@ const SideBlock = ({ type, data, date, side, children, parent, onChange }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className={"sidebar-side-block " + basedClasses}>
         <div className="sidebar-side-block_header">
           {showTooltip ? (
@@ -59,7 +59,7 @@ const SideBlock = ({ type, data, date, side, children, parent, onChange }) => {
         {showTiming && parent && <TripDetails />}
         {children ? children : null}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

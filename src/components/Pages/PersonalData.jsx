@@ -67,7 +67,7 @@ const PersonalData = () => {
   const isValidData = validateDataPassengers(state);
 
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-tickets" banner={banner3} />
       <div className="personal-data_wrap">
         <MainForm className="search-tickets_form" />
@@ -180,7 +180,7 @@ const PersonalData = () => {
           )}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

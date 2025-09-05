@@ -84,7 +84,7 @@ const TrainsMenuCard = ({ departure, onClick }) => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Card key={departure._id} id={departure._id} className="trains-menu-item">
         <CardTop className="trains-menu-item">
           <MySvgIcon
@@ -143,7 +143,7 @@ const TrainsMenuCard = ({ departure, onClick }) => {
           )}
         </CardBottom>
       </Card>
-    </React.Fragment>
+    </>
   );
 };
 

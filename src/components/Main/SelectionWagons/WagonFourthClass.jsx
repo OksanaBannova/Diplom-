@@ -17,7 +17,7 @@ const WagonFourthClass = ({ data, selectedTypeTicket, onClick }) => {
 
   
   return (
-    <React.Fragment>
+    <>
       <div className="wagon_item wagon-fourth_class">
         <div className="wagon_template-block">
           <span className="template-text">
@@ -133,7 +133,7 @@ const WagonFourthClass = ({ data, selectedTypeTicket, onClick }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default WagonFourthClass;

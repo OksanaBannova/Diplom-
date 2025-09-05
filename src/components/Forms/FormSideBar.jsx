@@ -8,7 +8,7 @@ const FormSideBar = () => {
 
 
   return (
-    <React.Fragment>
+    <>
       <div className="form-sidebar-block">
         <div className="form-sidebar-block_departure">
           <CardTitle
@@ -32,7 +32,7 @@ const FormSideBar = () => {
           />
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

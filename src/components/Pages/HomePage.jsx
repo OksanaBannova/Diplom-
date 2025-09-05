@@ -10,7 +10,7 @@ import banner1 from "../../img/banner/banner1.png";
 
 const HomePage = () => {
   return (
-    <React.Fragment>
+    <>
       <Banner className="banner banner-home" banner={banner1}>
 
       </Banner>
@@ -20,7 +20,7 @@ const HomePage = () => {
       <HowItWorks />
 
       <FeedBack />
-    </React.Fragment>
+    </>
   );
 };
 

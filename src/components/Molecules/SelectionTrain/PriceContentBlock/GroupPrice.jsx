@@ -5,7 +5,7 @@ import { formattedPrice } from "../../../../utils/trainSelectionUtils";
 const GroupPrice = ({ className, price }) => {
  
   return (
-    <React.Fragment>
+    <>
       <div className={className + "_price"}>
         <span className={className + "_min-price"}>
           {formattedPrice(price)}
@@ -15,7 +15,7 @@ const GroupPrice = ({ className, price }) => {
           ></i>
         </span>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

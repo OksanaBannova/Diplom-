@@ -8,14 +8,14 @@ import { capitalizeFirstLetter, formattedPrice } from "../../utils/trainSelectio
 const LastTickets = ({data}) => {
 
   return (
-    <React.Fragment>
+    <>
       <div className="last-tickets-block">
         <CardTitle text="Последние билеты" className={"last-tickets"} />
         <div className="card-deck last-tickets-menu-group no-gutters">
           {data && data.map((item) => <Card key={nanoid()} {...item} />)}
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
@@ -23,7 +23,7 @@ export default LastTickets;
 
 const Card = (item) => {
   return (
-    <React.Fragment>
+    <>
       <div key={nanoid()} className="card last-tickets-menu-item">
         <div className="card-body p-0 last-tickets__card">
           <div className="  last-tickets_train-departure-from d-flex flex-column">
@@ -68,7 +68,7 @@ const Card = (item) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

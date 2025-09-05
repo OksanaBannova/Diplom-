@@ -10,7 +10,7 @@ const ReactRangeSlider = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <InputRange
         id="slider"
         minValue={1920}
@@ -22,6 +22,6 @@ const ReactRangeSlider = () => {
           max: price_to,
         }}
       />
-    </React.Fragment>
+    </>
   );
 };

@@ -9,7 +9,7 @@ const PriceBlock = () => {
   );
 
   return (
-    <React.Fragment>
+    <>
       <div className="sidebar-price-block">
         <CardTitle text={"Стоимость"} className="sidebar-price-block" />
         <div className="sidebar-price-block_description">
@@ -26,7 +26,7 @@ const PriceBlock = () => {
           end={price_to}
         />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

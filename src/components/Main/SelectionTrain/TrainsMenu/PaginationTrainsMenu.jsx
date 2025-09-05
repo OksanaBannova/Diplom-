@@ -3,7 +3,7 @@ import React from "react";
 const PaginationTrainsMenu = ({ amount, limit }) => {
   //const totalPages = Math.round(amount / limit);
   return (
-    <React.Fragment>
+    <>
       <nav aria-label="..." className="nav-selection-trains-pagination">
         <ul className="pagination pagination-sm selection-trains-pagination">
           <li className="page-item disabled">
@@ -33,7 +33,7 @@ const PaginationTrainsMenu = ({ amount, limit }) => {
           </li>
         </ul>
       </nav>
-    </React.Fragment>
+    </>
   );
 };
 

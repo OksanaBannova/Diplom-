@@ -17,7 +17,7 @@ const ScreenPassengers = ({ data }) => {
   const params = useParams();
 
   return (
-    <React.Fragment>
+    <>
       <div className="screening-block screening-block_passengers">
         <div className=" card screening-block_card">
           <div className="screening-block_card-top">
@@ -111,7 +111,7 @@ const ScreenPassengers = ({ data }) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

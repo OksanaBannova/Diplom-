@@ -14,7 +14,7 @@ import { Button } from "../Atoms/Atoms";
 const Modal = ({ type, onClick }) => {
 
   return (
-    <React.Fragment>
+    <>
       <div className="modal-wrapper">
         <div className="modal">
           <Card id={nanoid()} className={"modal"}>
@@ -43,7 +43,7 @@ const Modal = ({ type, onClick }) => {
           </Card>
         </div>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 export default Modal;
