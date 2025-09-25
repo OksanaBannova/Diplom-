@@ -36,11 +36,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: 'yarn'
       - name: Install dependencies
-        run: npm install
+        run: yarn install
       - name: Build
-        run: npm run start
+        run: yarn run start
         env:
           IMAGES_ASSETS_URL: ${{ secrets.IMAGES_ASSETS_URL }}
       - name: Setup Pages
