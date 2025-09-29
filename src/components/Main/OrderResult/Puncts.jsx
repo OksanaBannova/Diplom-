@@ -1,4 +1,5 @@
 import React from "react";
+import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import {MySvgIcon } from "../../Atoms/Atoms";
 import Card from "../CardsBlock/Card";
 import { CardTop, CardBody } from "../CardsBlock/CardsMolecules";
