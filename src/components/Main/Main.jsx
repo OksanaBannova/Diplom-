@@ -1,7 +1,9 @@
 import React from "react";
-import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import { useLocation } from "react-router-dom";
-import { Main } from "react-pure-carousel";
+
+import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 
 const Main = (props) => {
   const location = useLocation();
