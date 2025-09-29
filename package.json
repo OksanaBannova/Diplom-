@@ -28,6 +28,7 @@
     "react-paginate": "^8.3.0",
     "react-pure-carousel": "^1.1.0",
     "react-redux": "^9.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.8.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
