@@ -8084,6 +8084,11 @@ react-paginate@^8.3.0:
   dependencies:
     prop-types "^15"
 
+react-pure-carousel@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/react-pure-carousel/-/react-pure-carousel-1.1.0.tgz#7fd5e21be7d37fbce4a2cb438b6e16393212ea7a"
+  integrity sha512-I3tL+ExmltsHI5gjVslOuJOTQu+QmZm9wgCsenW/Ygq0htv6Eh3qQCTiTTwqqMwIagDQQc+XmMULWtSr/9jF/g==
+
 react-redux@^9.2.0:
   version "9.2.0"
   resolved "https://registry.npmjs.org/react-redux/-/react-redux-9.2.0.tgz#96c3ab23fb9a3af2cb4654be4b51c989e32366f5"

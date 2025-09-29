@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useLocation } from "react-router-dom";
+import { Main } from "react-pure-carousel";
 
 const Main = (props) => {
   const location = useLocation();
