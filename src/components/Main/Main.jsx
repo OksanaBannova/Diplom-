@@ -1,5 +1,5 @@
 import React from "react";
-
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import { useLocation } from "react-router-dom";
 import { Main } from "react-pure-carousel";
 
