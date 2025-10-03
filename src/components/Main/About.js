@@ -1,5 +1,5 @@
 import "../Main/main.css";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+
 
 const About = () => {
   return (
