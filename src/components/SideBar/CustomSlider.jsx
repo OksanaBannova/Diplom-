@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { parsedUrlString, getUrlSearch } from "../../utils/trainSelectionUtils";
-import Box from "@mui/material/Box";
-import Slider from "@mui/material/Slider";
+/*import Box from "@mui/material/Box";
+import Slider from "@mui/material/Slider";*/
 import { setTrainsParameters } from "../../features/catalogTrainsSlice";
 /*import { styled } from "@mui/material/styles";*/
 
