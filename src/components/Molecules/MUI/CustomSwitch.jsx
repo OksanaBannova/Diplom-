@@ -1,6 +1,6 @@
 
 import Switch from "@mui/material/Switch";
-import { styled } from "@mui/material/styles";
+/*import { styled } from "@mui/material/styles";*/
 
 const CustomSwitch = styled(Switch)(() => ({
   /**Эти стили применяются только при обновлении (???) */
