@@ -1,4 +1,4 @@
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+
 const Contacts = () => {
   return (
     <section className="top-sales">
