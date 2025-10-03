@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 /*import FormGroup from "@mui/material/FormGroup";*/
-import FormControlLabel from "@mui/material/FormControlLabel";
+/*import FormControlLabel from "@mui/material/FormControlLabel";*/
 import icon_second_class from "../../img/selectionTrain/icon_second_class.svg";
 import icon_fourth_class from "../../img/selectionTrain/icon_fourth_class.svg";
 import icon_third_class from "../../img/selectionTrain/icon_third_class.svg";
