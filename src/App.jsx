@@ -3,13 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-/*function App() {
+function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
+        <a href="/Diplom-" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
@@ -32,10 +32,10 @@ import './App.css'
   )
 }
 
-export default App*/
+export default App
  
 
-const Main = (props) => {
+/**const Main = (props) => {
   const location = useLocation();
 
   const classBased =
@@ -53,4 +53,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default Main;*/
