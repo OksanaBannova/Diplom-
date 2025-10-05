@@ -39,7 +39,7 @@ const Main = (props) => {
   const location = useLocation();
 
   const classBased =
-    location.pathname === "/Diploma-FFE-Train-Tickets"
+    location.pathname === "/Diploma-"
       ? "main-content__home-page"
       : "main-content__wrap d-flex";
   return (
