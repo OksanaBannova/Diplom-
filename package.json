@@ -1,5 +1,5 @@
 {
-  "name": "Diplom-",
+  "name": "diplom",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -47,6 +47,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.9.3",
     "react-scripts": "^5.0.1",
+    "recharts": "^3.3.0",
     "rollup-plugin-visualizer": "^6.0.5",
     "terser": "^5.44.0",
     "vite-plugin-compression": "^0.5.1",
