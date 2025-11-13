@@ -51,6 +51,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v6
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - run: yarn ci
+      - run: yarn run build --if-present
+      - run: yarn test
