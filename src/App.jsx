@@ -110,7 +110,8 @@ function TrainsPage() {
 
 function NotFound() {
   return (
-function NotFound() {
+    <div style={{ textAlign: 'center', padding: '40px' }}>
+      <h2 style={{ color: '#dc354function NotFound() {
   return (
     <div style={{ textAlign: 'center', padding: '40px' }}>
       <h2 style={{ color: '#dc3545' }}>❌ Страница не найдена</h2>
@@ -131,5 +132,3 @@ function NotFound() {
 }
 
 export default App;
-
-
