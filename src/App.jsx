@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         {/* Убрал target="_blank" для внутренней ссылки */}
-        <a href="/Diplom-/">
+     /*   <a href="/Diplom-/">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
