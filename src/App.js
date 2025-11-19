@@ -14,9 +14,9 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Diplom-">
       <Routes>
-        <Route path="/Diplom-/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="trains/" element={<SelectionTrain />} />
           <Route path="seats/:id" element={<SelectionWagons />} />
@@ -26,7 +26,6 @@ function App() {
           <Route path="order-result/:id/" element={<OrderResult/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
-      
       </Routes>
     </BrowserRouter>
   );
