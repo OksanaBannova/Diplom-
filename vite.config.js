@@ -3,15 +3,17 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Diplom-/', // Должно совпадать с basename в React Router
+  base: '/Diplom-/',
   
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    sourcemap: false
   },
   
   server: {
-    port: 3000
+    port: 3000,
+    open: true
   }
 })
 
