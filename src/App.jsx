@@ -9,10 +9,11 @@ function App() {
   return (
     <>
       <div>
-        <a href="/Diplom-" target="_blank">
+        {/* Убрал target="_blank" для внутренней ссылки */}
+        <a href="/Diplom/">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -33,24 +34,3 @@ function App() {
 }
 
 export default App
- 
-
-/**const Main = (props) => {
-  const location = useLocation();
-
-  const classBased =
-    location.pathname === "/Diplom-"
-      ? "main-content__home-page"
-      : "main-content__wrap d-flex";
-  return (
-    <main className="main container-fluid">
-      <div className="row">
-        <div className="col col-lg p-0">
-          <div className={classBased}>{props.children}</div>
-        </div>
-      </div>
-    </main>
-  );
-};
-
-export default Main;*/
