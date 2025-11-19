@@ -1,0 +1,28 @@
+name: Deploy Full Stack App
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+          
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: Check project structure
+        run: |
+          echo "=== Project structure ==="
+          find src/ -name "*.js" -o -name "*.jsx" | head -20
+          echo "=== Store files ==="
+          find src/ -name "*store*" -o -name "*redux*" 2>/dev/null || echo "No store files found
