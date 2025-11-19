@@ -111,9 +111,6 @@ function TrainsPage() {
 function NotFound() {
   return (
     <div style={{ textAlign: 'center', padding: '40px' }}>
-      <h2 style={{ color: '#dc354function NotFound() {
-  return (
-    <div style={{ textAlign: 'center', padding: '40px' }}>
       <h2 style={{ color: '#dc3545' }}>❌ Страница не найдена</h2>
       <p>Запрашиваемая страница не существует</p>
       <Link to="/" style={{
