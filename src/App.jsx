@@ -2,8 +2,7 @@ import React from "react";
 
 function App() {
   return (
-    
-  )<BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/fe-dev-diploma/" element={<Layout />}>
           <Route index element={<HomePage />} />
