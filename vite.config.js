@@ -1,15 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { visualizer } from 'rollup-plugin-visualizer'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    visualizer() // Опционально для анализа бандла
-  ],
-  
-  base: '/Diplom-/', // Убедитесь, что это имя вашего репозитория
+  plugins: [react()],
+  base: '/Diplom/',
   
   build: {
     outDir: 'dist',
@@ -17,30 +11,27 @@ export default defineConfig({
     minify: 'terser',
     target: 'es2015',
     
-    // Оптимизация для ваших компонентов
+    // Для лучшей совместимости с CSP
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
           ui: ['react-router-dom'],
-          charts: ['recharts'] // Если используете графики
+          charts: ['recharts']
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
-        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
+        entryFileNames: 'assets/js/[name]-[hash].js'
       }
-    },
-    
-    chunkSizeWarningLimit: 800
+    }
   },
   
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom']
-  },
-  
+  // Отключить встроенный dev server CSP для разработки
   server: {
     port: 3000,
-    open: true
+    open: true,
+    headers: {
+      'Content-Security-Policy': "default-src 'self' 'unsafe-inline' 'unsafe-eval' https:;"
+    }
   }
 })
 
