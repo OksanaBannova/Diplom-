@@ -2,19 +2,18 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { visualizer } from 'rollup-plugin-visualizer'
 
-
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    visualizer({
-      filename: 'dist/stats.html',
-      open: false,
-      gzipSize: true
-    })
+    visualizer() // Опционально для анализа бандла
   ],
   
+  base: '/Diplom-/', // Убедитесь, что это имя вашего репозитория
+  
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     minify: 'terser',
     target: 'es2015',
     
@@ -23,11 +22,12 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['react-router-dom'], // Учитывая что у вас есть роутинг
+          ui: ['react-router-dom'],
           charts: ['recharts'] // Если используете графики
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js'
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]'
       }
     },
     
@@ -41,9 +41,6 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
-  },
-
-
-  // ... остальная конфигурация
-  base: '/Diplom/', // Имя вашего репозитория
+  }
 })
+
