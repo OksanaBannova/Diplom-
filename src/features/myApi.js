@@ -1,23 +1,21 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import queryString from "query-string";
+mport { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+import queryString from "query-string";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://students.netoservices.ru/fe-diplom/",
+    baseUrl: "https://students.netoservices.ru/fe-diplom/routes/",
   }),
-  tagTypes: ["dataSearchCityes", "dataSearchTrains", "LastTickets"],
   endpoints: (builder) => ({
     getCityesName: builder.query({
-      query: (name) => `routes/cities?name=${name}`,
-      providesTags: (result, error, name) => [
-        { type: "dataSearchCityes", id: name },
+      query: (arg) => `cities?name=${arg}`,
+      providesTags: (result, error, arg) => [
+        { type: "dataSearchCityes", name: arg },
       ],
     }),
-    
     getTrainsList: builder.query({
       query: (arg) => {
-        console.log(arg, "trainParams");
+      console.log(arg, "trainParams");
 
         const requestObj = {
           ...arg.search,
@@ -25,9 +23,7 @@ export const api = createApi({
           ...arg.parameters,
           ...arg.filter,
         };
-        
-        console.log(requestObj, 'requestObj');
-        
+console.log(requestObj,'requestObj')
         for (let key in requestObj) {
           if (requestObj[key] === false) requestObj[key] = undefined;
         }
@@ -37,20 +33,17 @@ export const api = createApi({
           skipEmptyString: true,
         });
 
-        return `routes?${params}`;
+        return `?${params}`;
       },
       providesTags: (result, error, arg) => [
-        { type: "dataSearchTrains", id: JSON.stringify(arg) },
+        { type: "dataSearchTrains", list: arg },
       ],
     }),
-    
     getTrainId: builder.query({
-      query: (id) => `routes/${id}/seats`,
+      query: (arg) => `${arg}/seats`,
     }),
-    
     getLastTickets: builder.query({
-      query: () => "routes/last",
-      providesTags: ["LastTickets"],
+      query: () => `last`,
     }),
   }),
 });
@@ -61,3 +54,5 @@ export const {
   useGetTrainIdQuery,
   useGetLastTicketsQuery,
 } = api;
+/* providesTags: (result, error, arg) => [{type: "dataSearchTrains", data: arg}],*/
+/**    */
