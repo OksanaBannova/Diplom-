@@ -1,21 +1,23 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
 import queryString from "query-string";
+
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://students.netoservices.ru/fe-diplom/routes/",
+    baseUrl: "https://students.netoservices.ru/fe-diplom/",
   }),
+  tagTypes: ["dataSearchCityes", "dataSearchTrains", "LastTickets"],
   endpoints: (builder) => ({
     getCityesName: builder.query({
-      query: (arg) => `cities?name=${arg}`,
-      providesTags: (result, error, arg) => [
-        { type: "dataSearchCityes", name: arg },
+      query: (name) => `routes/cities?name=${name}`,
+      providesTags: (result, error, name) => [
+        { type: "dataSearchCityes", id: name },
       ],
     }),
+    
     getTrainsList: builder.query({
       query: (arg) => {
-      console.log(arg, "trainParams");
+        console.log(arg, "trainParams");
 
         const requestObj = {
           ...arg.search,
@@ -23,7 +25,9 @@ export const api = createApi({
           ...arg.parameters,
           ...arg.filter,
         };
-console.log(requestObj,'requestObj')
+        
+        console.log(requestObj, 'requestObj');
+        
         for (let key in requestObj) {
           if (requestObj[key] === false) requestObj[key] = undefined;
         }
@@ -33,17 +37,20 @@ console.log(requestObj,'requestObj')
           skipEmptyString: true,
         });
 
-        return `?${params}`;
+        return `routes?${params}`;
       },
       providesTags: (result, error, arg) => [
-        { type: "dataSearchTrains", list: arg },
+        { type: "dataSearchTrains", id: JSON.stringify(arg) },
       ],
     }),
+    
     getTrainId: builder.query({
-      query: (arg) => `${arg}/seats`,
+      query: (id) => `routes/${id}/seats`,
     }),
+    
     getLastTickets: builder.query({
-      query: () => `last`,
+      query: () => "routes/last",
+      providesTags: ["LastTickets"],
     }),
   }),
 });
@@ -54,5 +61,3 @@ export const {
   useGetTrainIdQuery,
   useGetLastTicketsQuery,
 } = api;
-/* providesTags: (result, error, arg) => [{type: "dataSearchTrains", data: arg}],*/
-/**    */
