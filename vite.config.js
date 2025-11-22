@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
 // vite.config.js
-export default {
-  base: '/Diplom-/',  // Обязательно с косой чертой на конце
-}
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  base: '/Diplom-/',
+  plugins: [react()],
+});
