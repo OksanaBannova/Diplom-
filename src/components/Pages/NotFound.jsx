@@ -11,7 +11,7 @@ const NotFound = () => {
       <Button
         key={nanoid()}
         text={"Вернуться на главную"}
-        onClick={() => navigate("/Diplom-")}
+        onClick={() => navigate("/Diplom-1")}
       />
     </section>
   );

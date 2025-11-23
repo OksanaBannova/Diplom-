@@ -158,7 +158,7 @@ const PersonalData = () => {
                   onClick={() => {
                     dispatch(setContributor({ data: state }));
                     navigate({
-                      pathname: `/Diplom-/screening/${params.id}`,
+                      pathname: `/Diplom-1/screening/${params.id}`,
                       search: location.search,
                     })
                 
@@ -172,7 +172,7 @@ const PersonalData = () => {
               text="Вы не выбрали ни одного места в вагоне "
               onClick={() =>
                 navigate({
-                  pathname: `/Diplom-/seats/${params.id}`,
+                  pathname: `/Diplom-1/seats/${params.id}`,
                   search: location.search,
                 })
               }

@@ -189,7 +189,7 @@ console.log(upData,'upData')
                   type="next-block"
                   disabled={isValidSeats.length ? false : true}
                   onClick={() =>     navigate({
-                    pathname: `/Diplom-/passengers/${id}`,
+                    pathname: `/Diplom-1/passengers/${id}`,
                     search: location.search,
                   })}
                 ></Button>

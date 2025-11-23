@@ -14,19 +14,19 @@ const SideBar = () => {
   const { data = [] /*isError*/ } = useGetLastTicketsQuery();
 
   if (
-    location.pathname === "/Diplom-" ||
-    location.pathname === "/Diplom-/order-result"
+    location.pathname === "/Diplom-1" ||
+    location.pathname === "/Diplom-1/order-result"
   ) {
     return;
   }
 
   const getLocation = () => {
     if (
-      location.pathname === "/Diplom-/trains" ||
-      location.pathname === "/Diplom-/trains/" 
+      location.pathname === "/Diplom-1/trains" ||
+      location.pathname === "/Diplom-1/trains/" 
     ) {
       return true;
-    } else if (location.pathname === `/Diplom-/seats/${params.id}`) {
+    } else if (location.pathname === `/Diplom-1/seats/${params.id}`) {
       return true;
     } else {
       return false;

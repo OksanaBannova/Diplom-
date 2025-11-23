@@ -5,7 +5,7 @@ import "./header.css";
 const Logo = () => {
   return (
     <>
-      <Link to="/Diplom-" className="logo-container" id="startLogo">
+      <Link to="/Diplom-1" className="logo-container" id="startLogo">
         Лого
       </Link>
     </>

@@ -9,7 +9,7 @@ const Banner = ({ banner, className, children }) => {
   return (
     <>
       <div className={className}>
-        {location.pathname === "/Diplom-" ? (
+        {location.pathname === "/Diplom-1" ? (
           <Title
             text="Вся жизнь - "
             strongText={"путешествие!"}

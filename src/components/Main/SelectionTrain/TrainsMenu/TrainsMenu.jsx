@@ -24,7 +24,7 @@ const TrainsMenu = ({ currentItems }) => {
     dispatch(setTrainId({ id: item._id }));
     dispatch(setSelectionTrain({ data: item }));
     navigate({
-      pathname: `/Diplom-/seats/${item._id}`,
+      pathname: `/Diplom-1/seats/${item._id}`,
       search: location.search,
     });
   };

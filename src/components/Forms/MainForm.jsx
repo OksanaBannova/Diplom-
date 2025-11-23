@@ -73,9 +73,9 @@ const MainForm = ({ className }) => {
   const clickHandler = () => {
     dispatch(setDataRequest({ data: { from, to } }));
     dispatch(setParameters({ offset: 0 }));
-    if (location.pathname !== `/Diplom-/trains/${urlSearchString}`)
+    if (location.pathname !== `/Diplom-1/trains/${urlSearchString}`)
       navigate({
-        pathname: `/Diplom-/trains/`,
+        pathname: `/Diplom-1/trains/`,
         search: `${urlSearchString}`,
       });
   };
@@ -153,7 +153,7 @@ const MainForm = ({ className }) => {
                 : false
             }
           ></Button>
-          {isError && location.pathname === "/Diplom-" && (
+          {isError && location.pathname === "/Diplom-1" && (
             <Info
               type={"error"}
               text={"Что-то пошло не так, обновите страницу..."}
