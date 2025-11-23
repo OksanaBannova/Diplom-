@@ -1,42 +1,32 @@
 import React from "react";
 
 import Review from "../Molecules/Review";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const FeedBack = () => {
   return (
-    <>
-      <section className="feedback" id="feedback">
-        <h2 className="feedback__title">Отзывы</h2>
+    <section className="feedback" id="feedback">
+      <h2 className="feedback__title">Отзывы</h2>
 
-        <Carousel />
-      </section>
-    </>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        pagination={{ clickable: true }}
+        navigation
+        spaceBetween={20}
+        slidesPerView={1}
+      >
+        {[...Array(5)].map((_, i) => (
+          <SwiperSlide key={i}>
+            <Review />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
   );
 };
 
 export default FeedBack;
-
-const Carousel = () => {
-  return (
-    <CarouselProvider
-      naturalSlideWidth={60}
-      naturalSlideHeight={45}
-      totalSlides={5}
-      visibleSlides={1}
-    >
-      <Slider>
-        {[...Array(5).keys()].map((item) => {
-          return (
-            <Slide key={item} index={item} className="carousel-item">
-              <Review />
-            </Slide>
-          );
-        })}
-      </Slider>
-      <DotGroup className="custom_dot-group"></DotGroup>
-    </CarouselProvider>
-  );
-};

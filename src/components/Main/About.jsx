@@ -1,5 +1,5 @@
 import "../Main/main.css";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
+
 
 const About = () => {
   return (
@@ -34,4 +34,3 @@ const About = () => {
 export default About;
 
 
-/**how it works */
