@@ -1,66 +1,86 @@
+/* header.css */
+
 .header {
-  width: 1920px;
-  padding: 0;
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
   top: 0;
-  left: -1px;
-  z-index: 10;
-  position: absolute;
+  z-index: 1000;
 }
 
-.header-top {
-  padding-top: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 64px;
-}
-
-.logo-container {
-  width: 104px;
-  height: 49px;
-  margin-left: 258px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  color: #e5e5e5;
-}
-#navBar {
-  width: 1919px;
-  height: 94px;
-  padding: 0;
-
-  background: #292929;
-}
-#navbarMain {
-  position: absolute;
-  width: 828px;
-  height: 43px;
-  left: 250px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-}
-
-ul.navbar-nav.mr-auto.nav-list {
-  width: 100%;
+.header__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.header-title {
-  position: absolute;
-  width: 506px;
-  height: 170px;
-  left: 348px;
 
-  bottom: 234px;
+.header__logo {
+  flex-shrink: 0;
+}
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 72px;
-  line-height: 84px;
+/* Бургер-меню */
+.header__burger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-  color: #ffffff;
+/* Навигация */
+.header__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Адаптивность (до 768px) */
+@media (max-width: 768px) {
+  .header__burger {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    background: #2d2d2d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .header__nav--open {
+    display: flex;
+  }
+
+  .header__nav a {
+    display: block;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+  }
+
+  .header__nav a:hover {
+    background: #404040;
+  }
+}
+
+/* На очень узких экранах (мобильные) */
+@media (max-width: 480px) {
+  .header__container {
+    padding: 0 15px;
+  }
+
+  .header__burger {
+    font-size: 1.3rem;
+  }
 }

@@ -1,31 +1,35 @@
-import React from "react";
-
-import NavBar from "./NavBar";
-
-
-
+import React, { useState } from "react";
 import Logo from "./Logo";
-
+import NavBar from "./NavBar";
 import "./header.css";
-import { nanoid } from "nanoid";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
-      <header className="container-fluid header">
-        <div className="row">
-          <div className="col col-md">
-            <div className="header-top">
-              <Logo key={nanoid()} />
-            </div>
-            <NavBar key={nanoid()} />
-          </div>
+    <header className="header">
+      <div className="header__container">
+        {/* Логотип */}
+        <div className="header__logo">
+          <Logo />
         </div>
-      </header>
-    </>
+
+        {/* Бургер-меню (только на мобильных) */}
+        <button
+          className="header__burger"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+
+        {/* Навигация */}
+        <nav className={`header__nav ${isMenuOpen ? "header__nav--open" : ""}`}>
+          <NavBar />
+        </nav>
+      </div>
+    </header>
   );
 };
 
-/**  */
 export default Header;
