@@ -9,6 +9,31 @@
   z-index: 1000;
 }
 
+/* Стили для навигации */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #4dabf7;
+}
+
+
 .header__container {
   max-width: 1400px;
   margin: 0 auto;

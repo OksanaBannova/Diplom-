@@ -1,47 +1,31 @@
+// src/components/NavBar.jsx
 import React from "react";
-
 import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   return (
-    <>
-      <nav
-        className="navbar navbar-expand-sm pl-0 navbar-dark bg-dark"
-        id="navBar"
-      >
-        <div className="collapse navbar-collapse" id="navbarMain">
-          <ul className="navbar-nav mr-auto nav-list">
-            <li className="nav-item active">
-              <Link className="nav-link" to="/Diplom-1#about">
-                {" "}
-                О нас
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/Diplom-1#howItWorks"
-              >
-                Как это работает
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/Diplom-1#feedback"
-              >
-                Отзывы
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#footer">
-                Контакты
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
+    <ul className="nav-list">
+      <li className="nav-item">
+        <Link className="nav-link" to="/Diplom-1#about" smooth>
+          О нас
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/Diplom-1#howItWorks" smooth>
+          Как это работает
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/Diplom-1#feedback" smooth>
+          Отзывы
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/Diplom-1#footer" smooth>
+          Контакты
+        </Link>
+      </li>
+    </ul>
   );
 };
 
